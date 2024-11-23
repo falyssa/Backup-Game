@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #f92d2d, #e33c16,#faf676);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Smooth Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Content Styling */
+.container {
+    text-align: center;
+}
+
+h1, p {
+    font-size: 8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 2rem; /* Makes the paragraph text larger */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.start-button {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 50px;
+}
+
+.start-button:hover {
+    background: #565656;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.start-button:active {
+    background: #565656;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+}
