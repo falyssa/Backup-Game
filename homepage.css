@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(45deg, #f92d2d, #e33c16,#faf676);
+    background: linear-gradient(45deg, #4958de, #5e73cc,#f0f0ec);
     background-size: 300% 300%;
     animation: gradientAnimation 8s ease infinite;
     color: #ffffff;
@@ -61,3 +61,22 @@ p {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     transform: scale(0.95);
 }
+
+#cornerGif {
+    position: fixed; /* Keep it fixed to the bottom-left corner */
+    bottom: 10px; /* 10px from the bottom edge */
+    left: 10px; /* 10px from the left edge */
+    width: 300px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it appears on top of other elements */
+}
+
+#topGif {
+    position: fixed; /* Keep it fixed to the bottom-left corner */
+    top: 20px; /* 10px from the bottom edge */
+    right: 10px; /* 10px from the left edge */
+    width: 300px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it appears on top of other elements */
+}
+
