@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add an event listener to navigate to the Level One page
     startButton.addEventListener("click", () => {
-        window.location.href = "level-one.html"; // Redirect to Level One
+        window.location.href = "game.html"; // Redirect to Level One
     });
 });

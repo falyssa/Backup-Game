@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #faf3e0; /* Light background */
+  font-family: Arial, sans-serif;
+
+  /* Gradient Background */
+  background: linear-gradient(45deg, #4958de, #5e73cc,#f0f0ec);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+/* Smooth Gradient Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#game-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+canvas {
+  display: block;
+  background-color: #f7f9fc; /* Light canvas background */
+  border: 2px solid #333; /* Black border */
+  margin-bottom: 20px; /* Space between canvas and buttons */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+#choices {
+  margin-top: 30px;
+}
+
+.choice {
+  font-size: 16px;
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #9190aa; /* Button color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.choice:hover {
+  background-color: #5548c8;
+}
+
+#message {
+  position: absolute; /* Allow absolute positioning */
+  top: 100px; /* Distance from the top of the page */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  font-size: 20px; /* Adjust text size */
+  color: #ffffff; /* Text color */
+  font-family: Arial, sans-serif; /* Font style */
+  text-align: center;
+  font-weight: bold;
+}
+
+#topGif {
+  position: fixed; /* Keep it fixed to the bottom-left corner */
+  top: 0px; /* 10px from the bottom edge */
+  left: 10px; /* 10px from the left edge */
+  width: 300px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 10; /* Ensure it appears on top of other elements */
+}

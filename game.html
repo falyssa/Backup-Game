@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoiled Milk Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <img id="topGif" src="hand.webp" alt="Animated GIF">
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="choices">
+            <button id="drink" class="choice">Drink It</button>
+            <button id="cheese" class="choice">Make Cheese</button>
+            <button id="yogurt" class="choice">Make Yogurt</button>
+            <button id="skincare" class="choice">Skin Care Product</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <audio id="deathSound" src="skibidi-toilet-song.mp3"></audio>
+    <audio id="victorySound" src="victoryff.swf.mp3"></audio>
+    <img id="winGif" src="spongebob-victory.gif" style="display: none;" alt="You Win!">
+    <script src="game.js"></script>
+</body>
+</html>
